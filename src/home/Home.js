@@ -2,8 +2,8 @@ import { Box, Toolbar } from '@mui/material';
 import React from 'react';
 import banner from "../assets/Mask Group.png"
 import logo from "../assets/Group.png"
-import edit from "../assets/Ellipse 1140.png"
-import EditIcon from '@mui/icons-material/Edit';
+import pencil from "../assets/pencil.png"
+import AboutCompanyInformationForm from './AboutCompanyInformationForm';
 
 const Home = () => {
 
@@ -43,25 +43,47 @@ const Home = () => {
                         justifyContent: 'left',
                         position: 'relative',
                         top: 90,
-                        left: '13%',
+                        left: '16%',
                         zIndex: 'tooltip',
+                        bgcolor: 'background.paper',
+                        height: '4rem',
+                        width: '1rem',
+                        borderRadius: '50%',
+                        paddingY: '0',
+                        border: '1px solid #EDEDED'
                     }}>
-                    <img sx={{}} src={edit} alt="logo" />
+
+                    <img sx={{ width: '100%', paddingY: '0' }} src={pencil} alt="logo" />
                 </Toolbar>
 
                 <Toolbar
                     sx={{
                         justifyContent: 'left',
                         position: 'relative',
-                        top: 19,
-                        left: '15%',
+                        top: -230,
+                        left: '93%',
                         zIndex: 'tooltip',
+                        bgcolor: 'background.paper',
+                        height: '4rem',
+                        width: '1rem',
+                        borderRadius: '50%',
+                        border: '1px solid #EDEDED',
+                        alignItems: 'center'
                     }}>
-                    <EditIcon></EditIcon>
+
+                    <img sx={{ width: '100%', }} src={pencil} alt="logo" />
                 </Toolbar>
+
+                <AboutCompanyInformationForm></AboutCompanyInformationForm>
             </Box>
 
             {/* for form  */}
+
+
+
+
+
+
 
         </Box>
     );
