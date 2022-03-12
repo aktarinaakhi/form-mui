@@ -4,6 +4,7 @@ import banner from "../assets/Mask Group.png"
 import logo from "../assets/Group.png"
 import pencil from "../assets/pencil.png"
 import AboutCompanyInformationForm from './AboutCompanyInformationForm';
+import Benefits from './Benefits';
 
 const Home = () => {
 
@@ -75,16 +76,8 @@ const Home = () => {
                 </Toolbar>
 
                 <AboutCompanyInformationForm></AboutCompanyInformationForm>
+                <Benefits></Benefits>
             </Box>
-
-            {/* for form  */}
-
-
-
-
-
-
-
         </Box>
     );
 };
